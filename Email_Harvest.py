@@ -1,3 +1,6 @@
+# this program is used as a email gathering tool trying to match regular expressions which can be set manually incase specific crawling is needed.
+#
+#
 import requests
 from bs4 import BeautifulSoup
 import re
